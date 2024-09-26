@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script>
+function weg(){
+    var knop = document.getElementById('knop');
+    var windowWidth = 1000;
+            var windowHeight = 300;
+            var xPosition = Math.floor(Math.random() * windowWidth);
+            var yPosition = Math.floor(Math.random() * windowHeight);
+            knop.style.left = xPosition + 'px';
+            knop.style.top = yPosition + 'px';
+}
+        </script>
+        <style>
+        #knop {
+            position:absolute;
+            border: 1px solid black;
+            color: black;
+            background-color: red;
+            padding:30px;
+    }
+        </style>
+        <title>KLIK ME NIET...</title>
+    </head>
+    <body>
+<button id="knop" onmouseover="weg()" onclick="document.write('<h1>hoera<h1/>')">
+    PAK ME DAN ALS JE KAN
+</button>
+    </body>
+ 
+</html>
